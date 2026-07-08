@@ -1,0 +1,7 @@
+sample_id	tissue	conceptus	sex	paired_conceptus	notes
+21423L_S1	liver	21423	NA	FALSE	
+21424B_S2	brain	21424	NA	TRUE	Same conceptus as 21424L_S3
+21424L_S3	liver	21424	NA	TRUE	Same conceptus as 21424B_S2
+21562L_S4	liver	21562	NA	FALSE	
+22288B_S5	brain	22288	NA	FALSE	
+22316B_S6	brain	22316	NA	FALSE

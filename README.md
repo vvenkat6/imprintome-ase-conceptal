@@ -36,14 +36,6 @@ imprintome-ase-conceptal/
 │   ├── 09_wasp_filter_merge.slurm
 │   ├── 10_asereadcounter.slurm
 │   └── 11_gene_body_audit.slurm
-├── scripts/                     R and Python analysis scripts
-│   ├── snp_to_gene_mapping.R
-│   ├── gene_level_ase_stats.R
-│   ├── icr_annotation.R
-│   ├── prioritization_scoring.R
-│   ├── benchmark_audit.R
-│   ├── figure1_workflow.mmd
-│   └── figure2_readcount_plot.R
 ├── config/                      Configuration and metadata
 │   ├── samples.tsv              Sample manifest
 │   └── benchmark_gene_list.txt  Established human imprinted genes queried

@@ -1,0 +1,206 @@
+# ============================================================================
+# Established human imprinted genes and aliases for benchmark audit
+# ============================================================================
+# One gene symbol per line. Blank lines and lines starting with # are ignored
+# by the audit workflow.
+#
+# Source: geneimprint.com Homo sapiens catalog, "Imprinted" status category,
+# cross-referenced against Baran et al. 2015 (Genome Res 25:927-936) and
+# Jima et al. 2022 (Epigenetics 17:1920-1943). Aliases and historical names
+# included to maximize matching against GENCODE v38 gene_name entries.
+#
+# Genes recovered in the ASE analysis and reported in Table 1 (n=30) are
+# listed at the top for reference; the remainder are the queried set that
+# was audited in Supplementary Table S3.
+#
+# Nested-gene relationships (SNPs excluded by the multi-gene mapping rule)
+# are noted in accompanying comments where relevant.
+# ============================================================================
+
+# ---- Recovered in Table 1 (n=30) ------------------------------------------
+BLCAP
+CDKN1C
+DLK1
+GRB10
+H19
+MEST
+PEG10
+GNAS
+INPP5F
+VIM
+GDAP1L1
+DNMT1
+ZFP90
+PTPRN2
+MYCN
+NTM
+MAGI2
+HECW1
+OSBPL5
+RB1
+SMOC1
+GLI3
+ADNP2
+NR3C1
+RHOBTB3
+PPP1R9A
+ST8SIA1
+HMMR
+MEG8
+SNHG14
+
+# ---- 11p15.5 cluster (Beckwith-Wiedemann region) ---------------------------
+IGF2
+IGF2-AS
+IGF2AS
+INS
+INS-IGF2
+KCNQ1
+KCNQ1OT1
+LIT1
+KvDMR1
+KCNQ1DN
+PHLDA2
+TSSC3
+IPL
+SLC22A18
+IMPT1
+ITM
+BWSCR1A
+SLC22A18AS
+SLC22A18-AS1
+TSSC4
+TRPM5
+LTRPC5
+ASCL2
+HASH2
+MASH2
+
+# ---- 15q11-q13 cluster (Prader-Willi / Angelman region) -------------------
+SNRPN
+SNURF
+SNORD115
+SNORD115-1
+HBII-52
+SNORD116
+SNORD116-1
+HBII-85
+SNHG14
+NDN
+NECDIN
+MAGEL2
+NDNL1
+MKRN3
+ZNF127
+NPAP1
+C15orf2
+UBE3A
+E6-AP
+ATP10A
+ATP10C
+PWRN1
+PWRN2
+
+# ---- 14q32 cluster (DLK1-MEG3 domain) --------------------------------------
+MEG3
+GTL2
+RTL1
+PEG11
+RTL1-AS1
+RTL1AS
+anti-PEG11
+MEG8
+Rian
+DIO3
+DIO3OS
+
+# ---- 19q13.4 cluster ------------------------------------------------------
+PEG3
+KIAA0287
+ZNF904
+ZIM2
+ZIM3
+MIMT1
+ZNF264
+USP29
+
+# ---- 20q13 GNAS complex ---------------------------------------------------
+GNAS-AS1
+GNASAS
+NESPAS
+NESP-AS
+GNASXL
+XLAS
+NESP55
+GNAS-NESP
+
+# ---- 20q11 BLCAP/NNAT ------------------------------------------------------
+NNAT
+Peg5
+
+# ---- 7q21 / 7q32 cluster (SGCE/PEG10, MEST/COPG2) --------------------------
+SGCE
+DYT11
+CPA4
+MESTIT1
+MEST-IT1
+PEG1-AS
+COPG2
+KLF14
+
+# ---- 7p12 cluster ---------------------------------------------------------
+DDC
+DDC-AS1
+
+# ---- 6q24 cluster (transient neonatal diabetes) ---------------------------
+PLAGL1
+ZAC1
+LOT1
+HYMAI
+
+# ---- Other established imprinted loci -------------------------------------
+ZDBF2
+NAP1L5
+Peg12
+MCTS2P
+MCTS2
+HM13
+IMP1
+SPP
+HM13-AS1
+HM13-IT1
+INPP5F-AS1
+INPP5F-V2
+WT1
+WT1-AS
+WIT1
+WT1AS
+L3MBTL1
+L3MBTL
+SGK2
+ZNF331
+RITA
+ZNF597
+ZFAT
+ZNF406
+ZFAT-AS1
+ZFATAS
+SAS-ZFAT
+GLIS3
+ZNF515
+GLIS3-AS1
+ERLIN2
+C8orf2
+SPFH2
+FAM50B
+D6S2245E
+HTR5A
+HTR5A-AS1
+DIRAS3
+ARHI
+NOEY2
+LRRTM1
+MKRN3-AS1
+ZIM2-AS1
+
+# ---- End of list ----------------------------------------------------------

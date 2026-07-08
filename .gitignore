@@ -1,0 +1,154 @@
+# ============================================================================
+# .gitignore for imprintome-ase-conceptal
+# ============================================================================
+# Data files, intermediate outputs, and environment-specific artifacts are
+# excluded. Final result tables in tables/ are tracked; raw and intermediate
+# genomic data are not.
+# ============================================================================
+
+# ---- Raw sequencing data (deposited at GEO GSE288468, not tracked) ---------
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# ---- Alignment and variant intermediates -----------------------------------
+*.bam
+*.bam.bai
+*.bai
+*.sam
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.vcf.idx
+*.g.vcf
+*.g.vcf.gz
+*.g.vcf.gz.tbi
+*.bcf
+
+# ---- STAR outputs ----------------------------------------------------------
+*.Aligned.out.bam
+*.Aligned.sortedByCoord.out.bam
+*.Aligned.toTranscriptome.out.bam
+*.SJ.out.tab
+*.Log.out
+*.Log.final.out
+*.Log.progress.out
+*.ReadsPerGene.out.tab
+_STARgenome/
+_STARpass1/
+_STARtmp/
+
+# ---- WASP intermediates ----------------------------------------------------
+*.keep.bam
+*.to.remap.bam
+*.remap.keep.bam
+*.wasp.unsorted.bam
+remap.sam
+remap.Aligned.*
+find_intersecting_snps_output/
+
+# ---- GATK intermediates ----------------------------------------------------
+*.metrics
+*.recal.table
+*.split.bam
+
+# ---- Reference files (large; download separately per README) ---------------
+reference/
+*.fasta
+*.fasta.fai
+*.fa
+*.fa.fai
+*.dict
+*.gtf
+*.gtf.gz
+*.gff
+*.gff3
+
+# ---- SNP tables generated for WASP (per-chromosome) ------------------------
+snp_tables/
+*.snps.txt.gz
+
+# ---- Read count audit intermediates (final table is kept in tables/) -------
+gene_coords.tsv
+regions.bed
+
+# ---- ICR BED files (from Jima et al. 2022; download separately) ------------
+tier1_ICRs.bed
+tier2_ICRs.bed
+imprintome/
+
+# ---- Logs and temporary files ----------------------------------------------
+*.log
+*.out
+*.err
+slurm-*.out
+slurm-*.err
+tmp/
+tmp_*/
+node_tmp/
+*.tmp
+
+# ---- R -------------------------------------------------------------------
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+*.Rcheck/
+.Rprofile
+
+# ---- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+
+# ---- OS-specific ---------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ---- Editor and IDE ------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# ---- Jupyter -------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Compiled documents --------------------------------------------------
+*.pdf
+!docs/*.pdf
+!figures/*.pdf
+
+# ---- Zenodo / release artifacts ------------------------------------------
+*.zip
+*.tar.gz
+!tables/*.tar.gz
+
+# ---- Manuscript drafts (kept out of code repo) ---------------------------
+manuscript/
+drafts/
+*.docx
+*.doc

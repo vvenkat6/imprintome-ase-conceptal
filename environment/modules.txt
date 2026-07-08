@@ -1,0 +1,63 @@
+# ============================================================================
+# HPC module load commands used for the imprintome-ase-conceptal pipeline
+# ============================================================================
+# These are the exact `module load` invocations used on the North Carolina
+# State University Hazel HPC cluster. Adapt for your cluster's module system.
+#
+# To verify versions loaded on your system after running these commands:
+#   for tool in STAR gatk samtools bcftools bwa python3 R; do
+#       echo "=== $tool ==="
+#       $tool --version 2>&1 | head -3
+#   done
+# ============================================================================
+
+# ---- Alignment -------------------------------------------------------------
+module load star/2.7.10a
+
+# ---- Variant calling and BAM manipulation ---------------------------------
+module load gatk/4.4.0.0
+module load samtools/1.17
+module load bcftools/1.17
+
+# ---- BWA (loaded for WASP fallback; NOT used in final pipeline) -----------
+# The WASP remap step used STAR to match the original alignment parameters.
+# BWA is listed here only because early pipeline development explored a BWA
+# remap path that was ultimately not used for the final analysis.
+# module load bwa/0.7.17
+
+# ---- Python for WASP scripts ----------------------------------------------
+module load python/3.9.7
+
+# ---- R for statistical analysis and figures -------------------------------
+module load r/4.2.2
+
+# ---- Utilities ------------------------------------------------------------
+module load htslib/1.17         # bgzip, tabix
+module load tabix               # alias on some systems
+
+# ============================================================================
+# WASP is not typically available as an HPC module. It was installed from
+# source at the path:
+#   /home3/vvenka23/bin/WASP
+# Repository: https://github.com/bmvdgeijn/WASP
+# ============================================================================
+
+# ============================================================================
+# For reproducibility on a different cluster, the equivalent conda
+# environment would be:
+#
+#   conda create -n imprintome-ase \
+#       -c bioconda -c conda-forge \
+#       star=2.7.10a \
+#       gatk4=4.4.0.0 \
+#       samtools=1.17 \
+#       bcftools=1.17 \
+#       htslib=1.17 \
+#       python=3.9 \
+#       r-base=4.2
+#
+#   conda activate imprintome-ase
+#   # Then install WASP from source:
+#   git clone https://github.com/bmvdgeijn/WASP.git
+#   cd WASP && python setup.py install
+# ============================================================================
